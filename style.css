@@ -1,0 +1,261 @@
+/* ===== 1. WHOLE PAGE ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f8f6;
+  color: #1f2d2b;
+  margin: 0;
+  line-height: 1.7;
+}
+ 
+h1 { font-size: 40px; margin-bottom: 15px; }
+h2 { font-size: 30px; color: #0f6b63; margin-bottom: 8px; }
+h3 { font-size: 20px; margin-bottom: 6px; }
+ 
+/* ===== 2. MIDDLE CONTENT ===== */
+.wrap {
+  width: 85%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+ 
+/* ===== 3. NAVIGATION BAR ===== */
+header {
+  background-color: #0b4f49;
+  padding: 16px 0;
+}
+ 
+nav {
+  display: flex;                 /* puts logo and menu in one row */
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+ 
+.logo {
+  color: #ffd166;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+ 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+nav li {
+  display: inline;
+  margin-left: 22px;
+}
+ 
+nav a {
+  color: white;
+  text-decoration: none;
+}
+ 
+nav li a:hover {
+  color: #ffd166;                /* colour changes when mouse is on it */
+}
+ 
+/* ===== 4. TOP SECTION (hero) ===== */
+.hero {
+  display: flex;                 /* text on left, example box on right */
+  flex-wrap: wrap;               /* on small screens it stacks */
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0;
+}
+ 
+.hero > div {
+  flex: 1;
+  min-width: 280px;
+}
+ 
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 8px 10px 0 0;
+}
+ 
+.btn-main {
+  background-color: #f2a900;
+  color: #1f2d2b;
+}
+ 
+.btn-main:hover {
+  background-color: #ffc933;
+}
+ 
+.btn-line {
+  border: 2px solid #0f6b63;
+  color: #0f6b63;
+}
+ 
+.btn-line:hover {
+  background-color: #0f6b63;
+  color: white;
+}
+ 
+/* The example box */
+.demo {
+  background-color: white;
+  border-top: 8px solid #f2a900;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);   /* soft shadow */
+}
+ 
+.tag {
+  background-color: #0f6b63;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+ 
+.line {
+  border-bottom: 1px dashed #bbbbbb;
+  padding: 8px 0;
+}
+ 
+.line small {
+  color: #0f6b63;
+  font-weight: bold;
+}
+ 
+.big {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+ 
+/* ===== 5. SECTIONS ===== */
+section {
+  padding: 40px 0;
+}
+ 
+.intro {
+  color: #5a6b68;
+}
+ 
+/* Steps (3 boxes in one row) */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+ 
+.step {
+  flex: 1;
+  min-width: 220px;
+  background-color: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+ 
+.step:hover {
+  transform: translateY(-6px);   /* box lifts up on hover */
+}
+ 
+.num {
+  display: inline-block;
+  background-color: #0f6b63;
+  color: white;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+ 
+/* Features (2 boxes in one row) */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+ 
+.feature {
+  width: 45%;
+  min-width: 250px;
+  background-color: #e3f3ef;
+  border-left: 6px solid #f2a900;
+  border-radius: 8px;
+  padding: 14px 18px;
+}
+ 
+.feature p {
+  margin: 0;
+  color: #44625d;
+}
+ 
+/* Language buttons */
+.langs-title {
+  margin-top: 35px;
+}
+ 
+.langs span {
+  display: inline-block;
+  background-color: #0f6b63;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 18px;
+  margin: 5px 5px 0 0;
+}
+ 
+/* ===== 6. FORM ===== */
+.try {
+  background-color: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+ 
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 14px;
+}
+ 
+textarea, select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 6px;
+  border: 2px solid #b7d4cf;
+  border-radius: 8px;
+}
+ 
+textarea:focus, select:focus {
+  border-color: #0f6b63;         /* green border when you click inside */
+  outline: none;
+}
+ 
+button.btn {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 18px;
+}
+ 
+/* ===== 7. FOOTER ===== */
+footer {
+  background-color: #0b4f49;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+ 

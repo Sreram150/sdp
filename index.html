@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thaai Mozhi Learn – Learn in your mother tongue</title>
+
+  <!-- Link to the external CSS file (keep both files in the same folder) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+      <a class="logo" href="#top">Thaai Mozhi Learn</a>
+      <ul>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#try">Try it</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div>
+        <h1>Children learn best in the language they speak at home.</h1>
+        <p>An AI helper that explains lessons and translates them instantly, so primary school students can understand first and switch to other languages later.</p>
+        <a class="btn btn-main" href="#try">Try a lesson</a>
+        <a class="btn btn-line" href="#how">See how it works</a>
+      </div>
+
+      <!-- Demo of translation -->
+      <div class="demo">
+        <span class="tag">Class 3 · Science</span>
+        <div class="line">
+          <small>English (textbook)</small>
+          <p class="big">The sun rises in the east.</p>
+        </div>
+        <div class="line">
+          <small>Tamil</small>
+          <p class="big">சூரியன் கிழக்கில் உதிக்கிறது.</p>
+        </div>
+        <div class="line">
+          <small>Hindi</small>
+          <p class="big">सूरज पूर्व में उगता है।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <section id="how">
+      <h2>How it works</h2>
+      <p class="intro">Three simple steps for a teacher or a student.</p>
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Pick a language</h3>
+          <p>Choose the child's mother tongue from the list.</p>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>Add the lesson</h3>
+          <p>Type or paste a line from the textbook.</p>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <h3>Read and listen</h3>
+          <p>See the translation and a simple explanation with a local example.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <h2>What the tool offers</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Real-time translation</h3>
+          <p>Textbook sentences appear in the child's language as soon as they are entered.</p>
+        </div>
+        <div class="feature">
+          <h3>Teaching in the mother tongue</h3>
+          <p>Ideas are explained with words and examples children know from home and village life.</p>
+        </div>
+        <div class="feature">
+          <h3>Made for primary classes</h3>
+          <p>Short sentences, big letters, and simple words for Classes 1 to 5.</p>
+        </div>
+        <div class="feature">
+          <h3>Helps teachers too</h3>
+          <p>Teachers can prepare bilingual worksheets in minutes.</p>
+        </div>
+      </div>
+
+      <h3 class="langs-title">Languages planned</h3>
+      <div class="langs">
+        <span>தமிழ் Tamil</span>
+        <span>हिन्दी Hindi</span>
+        <span>తెలుగు Telugu</span>
+        <span>മലയാളം Malayalam</span>
+        <span>ಕನ್ನಡ Kannada</span>
+        <span>English</span>
+      </div>
+    </section>
+
+    <!-- TRY IT (form is only the design for now) -->
+    <section id="try">
+      <div class="try">
+        <h2>Try a lesson</h2>
+        <p class="intro">This form shows the design only. Later, JavaScript and an AI service can make it work.</p>
+
+        <label for="lang">Translate into</label>
+        <select id="lang">
+          <option>Tamil</option>
+          <option>Hindi</option>
+          <option>Telugu</option>
+          <option>Malayalam</option>
+          <option>Kannada</option>
+        </select>
+
+        <label for="text">Lesson text</label>
+        <textarea id="text" rows="4" placeholder="Example: Plants need water and sunlight to grow."></textarea>
+
+        <button class="btn btn-main" type="button">Translate lesson</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Thaai Mozhi Learn · A student project on AI for mother tongue-based primary education</p>
+    </div>
+  </footer>
+
+</body>
+</html>
